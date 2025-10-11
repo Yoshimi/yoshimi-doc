@@ -31,7 +31,7 @@
    \figureref{fig:yoshimi_menu_items}.
    \begin{figure}[H]
    \centering
-   \includegraphics[scale=1]{2.0/Menu.png}
+   \includegraphics[scale=0.9]{2.0/Menu.png}
    \caption[Yoshimi Menu, Exit]{Yoshimi Menu}
    \label{fig:yoshimi_menu_items}
 \end{figure}
@@ -40,7 +40,7 @@
 
 \begin{figure}[H]
    \centering
-   \includegraphics[scale=1]{2.3.0/menu_yoshimi.png}
+   \includegraphics[scale=0.7]{2.3.5/menu_yoshimi.png}
    \caption[Yoshimi Menu, Exit]{Yoshimi Menu}
    \label{fig:yoshimi_view_yoshimi}
 \end{figure}
@@ -89,11 +89,11 @@
 
 \begin{figure}[H]
    \centering
-   \includegraphics[scale=0.8]{2.3.0/about.png}
+   \includegraphics[scale=0.5]{2.3.5/about.png}
    \caption{Yoshimi Menu, About Dialog}
    \label{fig:yoshimi_about_dialog}
 \end{figure}
-    This has a new 'more' button that changes the window to an alphabetic list of
+    This has a 'more' button that changes the window to an alphabetic list of
     all those who have helped Yoshimi. Sometimes just a hint from these friends
     has been enough to pave the way for extensive improvements.
 \begin{figure}[H]
@@ -135,9 +135,9 @@
 %  directory. The means that if one opens a numbered instance, one will get
 %  back all the settings that were previously used for that instance.
 
-   Instances no longer fight for access to JACK/ALSA audio; they simply
-   try to find another route to a soundcard. Failing to find one,
-   they revert to null audio, but nonetheless start cleanly.
+   Instances don't fight for access to JACK/ALSA audio; they simply try to
+   find another route to a soundcard. Failing to find one, they revert to null
+   audio, but nonetheless start cleanly.
 
    The list of hidden "base parameters" that are set only by the main instance
    is now:
@@ -151,7 +151,7 @@
       \item Enable Single Master
    \end{itemize}
 
-   In the other instances these are now hidden instead of deactivated.  This
+   In the other instances these are hidden rather than deactivated.  This
    behaviour makes sense, as they are \textsl{never} enabled in the other
    instances of \textsl{Yoshimi}. This is more consistent, making
    \textsl{Yoshimi}'s configuration directory more tidy. These entries are
@@ -469,7 +469,7 @@
 
 \begin{figure}[H]
    \centering
-   \includegraphics[scale=0.5]{2.3.3/switches.png}
+   \includegraphics[scale=0.5]{2.3.5/switches.png}
    \caption{Yoshimi Switches Tab}
    \label{fig:yoshimi_settings_switches_tab}
 \end{figure}
@@ -478,7 +478,8 @@
 
    \begin{enumber}
       \item \textbf{Enable Bank Highlight}
-      \item \textbf{Hide Non Fatal Errors}
+      \item \textbf{Enable Part Reports}
+      \item \textbf{Hide Non-essential Reports}
       \item \textbf{Show Splash Screen}
       \item \textbf{Log XML Headers}
       \item \textbf{Log Load times}
@@ -491,15 +492,28 @@
    \end{enumber}
 
    \setcounter{ItemCounter}{0}      % Reset the ItemCounter for this list.
-    \index{new!Enable Bank Highlight}
    \itempar{Enable Bank Highlight}{Switches!Enable Bank Highlight}
    Setting this will highlight the most recent instrument either loaded from, or saved to a bank. It will be printed in bold text so will really stand out. This is especially useful where instruments have a different internal name to their filename.
 
-   \itempar{Hide Non Fatal Errors}{Main Settings!Hide Non-Fatal Errors}
+   \index{new!Enable Part Reports}
+   \itempar{Enable Part Reports}{Main Settings!Enable Part Reports}
+   If this is set, any action that could overwrite or otherwise lose an instument that has
+   been edited (and not saved) will first give a warning. For example, instruments in parts
+   2 9 19 have all been edited, and one attempts to shut \textsl{Yoshimi} will display the
+   following warning:
+
+   \begin{figure}[H]
+   \centering
+   \includegraphics[scale=0.5]{2.3.5/instrument_changed}
+   \caption{Yoshimi Instrument Changed}
+   \label{fig:yoshimi_instrument_changed}
+\end{figure}
+
+   \itempar{Hide Non-essential Reports}{Main Settings!Hide Non-essential Reports}
    Especially when running from the command line (with reports going there
    too), under some circumstances one can get a swamp of low-level error
-   messages (such as XRUNs) that is so large that one cannot work out what is
-   going on. This feature disables these error messages; it is a work in
+   reports (such as XRUNs) that is so large that one cannot work out what is
+   going on. This feature disables these reports; it is a work in
    progress to catch the bulk of them, while still reporting top-level messages
    and ones that cause a forced exit (surely not!)
 
@@ -567,9 +581,7 @@
 
    \paragraph{Menu / Yoshimi / Settings / Switches / History Locks}
    \label{paragraph:menu_yoshimi_settings_historylocks}
-   \index{new!History Locks}
-   New in \textsl{Yoshimi} V 1.6.0 there is a sub-panel \textsl{History Locks}
-
+   \index{History Locks}
    This is a set of config switches so that one can independently lock each of
    the history lists against change. In the locked state loading or saving new
    files will not update the associated history list at all. At any time, these
@@ -765,9 +777,9 @@
    \textbf{External} doesn't make any attempt to connect at all, so one would
    then do so by some other means.
 
-   Notice that the default is now the second option. However this will not
-   affect existing users, who will see it as 'Fixed' until such time as they
-   change it themselves.
+   Notice that the default is the second option. However this will not affect
+   existing users, who will see it as 'Fixed' until such time as they change
+   it themselves.
 
    \itempar{Alsa Midi Source}{ALSA!MIDI Source}
    ALSA MIDI Source.
@@ -853,9 +865,9 @@
    \label{fig:yoshimi_settings_cc}
 \end{figure}
 
-   A recent feature is that some changes to the items in this
-   tab cause a red \textbf{Pending} button to appear.  Pressing this
-   button saves that particular change.
+   A feature is that some changes to the items in this tab cause a
+   red \textbf{Pending} button to appear.  Pressing this button saves
+   that particular change.
 
 \begin{figure}[H]
    \centering

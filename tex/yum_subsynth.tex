@@ -24,7 +24,7 @@
 
 \begin{figure}[H]
    \centering
-   \includegraphics[scale=0.5]{2.3.3/sub.png}
+   \includegraphics[scale=0.45]{2.3.5/sub.png}
    \caption{SUBsynth Edit Dialog}
    \label{fig:subsynth_edit_dialog}
 \end{figure}
@@ -60,6 +60,7 @@
        \sectionref{subsec:volume_panning}. However their values for
        SUBsynth are as below.
       \item \textbf{Amplitude Env} (stock sub-panel)
+      \item \textbf{Amplitude LFO} (stock sub-panel)
    \end{enumber}
 
    \setcounter{ItemCounter}{0}      % Reset the ItemCounter for this list.
@@ -87,6 +88,11 @@
    \itempar{Amplitude Env}{subsynth!amplitude envelope}
    Amplitude Envelope.
    See \sectionref{subsubsec:amplitude_envelope_subpanel},
+   for information on this stock sub-panel.
+
+   \itempar{Amplitude LFO}{subsynth!amplitude LFO}
+   Amplitude LFO.
+   See \sectionref{subsubsec:lfo_user_interface_panels},
    for information on this stock sub-panel.
 
 \subsection{SUBsynth / BANDWIDTH}
@@ -195,6 +201,7 @@
       \item \textbf{Detune Type}
       \item \textbf{Coarse Det.}
       \item \textbf{Frequency Env}
+      \item \textbf{Frequency LFO}
    \end{enumber}
 
    \setcounter{ItemCounter}{0}      % Reset the ItemCounter for this list.
@@ -240,21 +247,12 @@
 
    \itempar{Frequency Env}{subsynth!freq env}
    Frequency Envelope Stock Sub-Panel.
-
-   \begin{enumber}
-      \item \textbf{Enable}
-      \item \textbf{A.value} or \textbf{A.val}
-      \item \textbf{A.dt}
-      \item \textbf{R.dt}
-      \item \textbf{R.val}
-      \item \textbf{Stretch}
-      \item \textbf{frcR}
-      \item \textbf{C}
-      \item \textbf{P}
-      \item \textbf{E}
-   \end{enumber}
-
    See \sectionref{fig:amplitude_envelope_editor}, for more details.
+
+   \itempar{Frequency LFO}{subsynth!freq lfo}
+   Frequency LFO Stock Sub-Panel.
+   See \sectionref{subsubsec:lfo_user_interface_panels}, for more details.
+
 
 \subsection{SUBsynth / OVERTONES}
 \label{subsec:subsynth_overtones}
@@ -330,6 +328,10 @@
    \itempar{Filter Env}{subsynth!filter env}
    Filter Params.  See
    \sectionref{subsubsec:envelope_settings_for_filter},
+   which describes this stock sub-panel.
+
+   \itempar{Filter LFO}{subsynth!filter LFO}
+   See \sectionref{subsubsec:lfo_user_interface_panels},
    which describes this stock sub-panel.
 
    \itempar{Stereo}{subsynth!filter stereo}

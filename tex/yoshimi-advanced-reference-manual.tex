@@ -49,14 +49,14 @@
 \makeindex
 
 \begin{document}
-\title{Yoshimi Advanced Reference Manual, v 2.3.3}
+\title{Yoshimi Advanced Reference Manual, v 2.3.5}
 \author{Chris Ahlstrom \texttt{(ahlstromcj@gmail.com)} with Will J. Godfrey}
 \date{\today}
 \maketitle
 
 \begin{figure}[H]
    \centering
-   \includegraphics[scale=0.60]{2.3.3/main.png}
+   \includegraphics[scale=0.60]{2.3.5/main.png}
 \end{figure}
 \vfill
 Proof reading: Art Horan (and others)
@@ -108,33 +108,6 @@ Proof reading: Art Horan (and others)
    in this manual applies specifically to versions of \textsl{ZynAddSubFx}
    prior to version 3.0.
 
-\iffalse
-   continued for quite a while in its own direction. These include
-   major optimizations for audio and MIDI performance,
-   progressive development of user-level and command-line access to all
-   controls, MIDI learn, and vector control.
-   At the same time, refinement continues, both visually and within the code.
-
-   What are the advantages of
-   \textsl{Yoshimi} versus \textsl{ZynAddSubFX}?
-   At one time \textsl{Yoshimi} had better JACK support
-   than \textsl{ZynAddSubFX}, but that is no longer true.
-   Both projects are in active development, and both are
-   progressing along their respective roadmaps.
-   \textsl{Yoshimi} currently has a considerably
-   revised graphical user-interface,
-   while \textsl{ZynAddSubFX} has a major user-interface upgrade planned.
-   Each project has some features and capabilities that the other lacks.
-   There may be internal differences of importance to
-   a developer, as well as features that aren't so easy to discover.  So,
-   really, ... use them both!
-
-   -- the \textsl{ZynAddSubFx} project is planning
-   a major user-interface change for version 3.0, and many of the file formats
-   will change as well.  Of course, one can still continue to use the old
-   "Zyn" as well.
-\fi
-
 \subsection{New Features}
 \label{subsec:introduction_new_features}
 
@@ -143,6 +116,13 @@ Proof reading: Art Horan (and others)
    There are new features for the command-line interface, and many internal
    fixes to reduce the likelihood of "xruns", static, clicks, or other
    performance issues.
+
+\subsubsection{New for Version 2.3.5}
+\label{subsubsec:new_features_2_3_5}
+The SubSynth engine now has a set of LFOs in the same style as AddSynth and PadSynth. Also, there is now a MIDI supported Omni feature.
+
+When loading new instruments, patchset etc. you are warned if this would overwrite changed, but unsaved instruments.
+Popup tooltips are now scaled to the parent window text size.
 
 \subsubsection{New for Version 2.3.1}
 \label{subsubsec:new_features_2_3_1}
@@ -754,7 +734,7 @@ Under the hood is a less obvious but highly significant improvement. A range of 
 \begin{figure}[H]
    \centering
 %  \includegraphics[scale=0.60]{2.0/Front.png}
-   \includegraphics[scale=0.60]{2.3.3/main.png}
+   \includegraphics[scale=0.60]{2.3.5/main.png}
    \caption{Yoshimi Main Screen}
    \label{fig:yoshimi_main_screen}
 \end{figure}
@@ -914,14 +894,6 @@ Under the hood is a less obvious but highly significant improvement. A range of 
 
    In summary, we can say that you will absolutely love \textsl{Yoshimi}.
 %  There are some topics that this document does not yet treat:
-
-%  \begin{itemize}
-%     \item Changing the colors and style of the GUI, as seen in some
-%        versions of \textsl{ZynAddSubFX}.  This does not yet seem possible,
-%        because the synth part is not truly separate from the GUI, and the
-%        \textsl{Yoshimi} developers have not found it easy to recode the
-%        FLTK GUI.
-%  \end{itemize}
 
    \begin{quotation}
       A car analogy:
