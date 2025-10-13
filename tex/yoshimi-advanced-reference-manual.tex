@@ -309,8 +309,8 @@ Under the hood is a less obvious but highly significant improvement. A range of 
    \textsl{Yoshimi} will scan this path for new banks, but
    won't make the root (or any of its banks) current. The final directory
    doesn't have to be \texttt{banks}, but that is tradition.
-   When running from the command line there is access to many
-   of the system and root, bank, and other settings.
+   When running from the command line there is access to almost all of the
+   system and root, bank, and other settings.
 
    \textsl{Yoshimi} splits out roots and banks from the main configuration
    file, and creates a new "history" file. The separation means that the
@@ -337,26 +337,24 @@ Under the hood is a less obvious but highly significant improvement. A range of 
 
    Once running, all setup can be done within the terminal window.
    Some settings will require a restart.
-   There is also extensive control of
-   roots, banks, parts and instruments including the ability to list and set
-   all of these. One can do things like:
+   There is also extensive control of roots, banks, parts and instruments
+   including the ability to list and set all of these. One can do things like:
 
    \begin{verbatim}
       add root /home/music/yoshimi/banks
       set part 4 program 130
    \end{verbatim}
 
-   Additional controls that are taken for granted in the GUI but
-   otherwise forgotten are master key shift and master volume.  The
-   most important parts of vector control are exposed to the command line.
+   Additional controls that are taken for granted in the GUI but otherwise
+   forgotten are master key shift and master volume.  The most important parts
+   of vector control are exposed to the command line.
    For all of this there is extensive error checking and feedback, which can be
    rendered in voice using text-to-speech software.
 
-   There is a partially-sighted person we hear from, and
-   a totally blind person (working with a Braille reader/writer) who has
-   offered a lot of suggestions, and very much likes vector control.  So
-   accessibility \index{accessibility} is an important feature of
-   \textsl{Yoshimi}.  See the section that follows.
+   There is a partially-sighted person we hear from, and a totally blind person
+   (working with a Braille reader/writer) who has offered a lot of suggestions,
+   and very much likes vector control.  So accessibility \index{accessibility}
+   is an important feature of \textsl{Yoshimi}.  See the section that follows.
 
 \subsubsection{Command Line}
 \label{subsubsec:new_features_command_line}
@@ -462,14 +460,12 @@ Under the hood is a less obvious but highly significant improvement. A range of 
 \subsubsection{Miscellany}
 \label{subsubsec:new_features_miscellany}
 
-   \textsl{Yoshimi} stamps its XML files
-   with its own major
+   \textsl{Yoshimi} stamps its XML files with its own major
    and minor version numbers underneath the existing ones, so it is possible
    to tell which version created the files.
    If the files (such as config) are not compatible with
-   \textsl{ZynAddSubFX},
-   the doctype and all other details are identified as purely for
-   \textsl{Yoshimi}.
+   \textsl{ZynAddSubFX}, the doctype and all other details are identified
+   as purely for \textsl{Yoshimi}.
 
    One can direct messages to either \texttt{stderr}
    (the error output of a terminal console) or the \textbf{Reports} window
@@ -555,8 +551,8 @@ Under the hood is a less obvious but highly significant improvement. A range of 
    used item will be placed at the top of the list. This is especially useful
    when wanting to continually save/load an item currently being worked on.
    However, since version 1.6.0 it has been possible to freeze these lists,
-   so benefiting the (also new) MIDI NRPN control to load settings from these
-   lists.
+   so benefiting the (also new) MIDI NRPN control to load settings numerically
+   from these lists.
 
 \subsection{File Compatibility}
 \label{subsec:file_compatibility}
@@ -733,7 +729,6 @@ Under the hood is a less obvious but highly significant improvement. A range of 
 
 \begin{figure}[H]
    \centering
-%  \includegraphics[scale=0.60]{2.0/Front.png}
    \includegraphics[scale=0.60]{2.3.5/main.png}
    \caption{Yoshimi Main Screen}
    \label{fig:yoshimi_main_screen}
@@ -751,7 +746,8 @@ Under the hood is a less obvious but highly significant improvement. A range of 
 \end{figure}
 
    Note that, if one presses the \texttt{Space} bar while the main window has
-   keyboard focus The AddSynth engine of Part 1 is toggled on or off. With other windows various checkboxes are likely to be toggled. This is under investigation!
+   keyboard focus The AddSynth engine of Part 1 is toggled on or off. With other
+   windows various checkboxes are likely to be toggled. This is under investigation!
 
    For this manual, the main window is composed of the following sections:
 
@@ -896,7 +892,7 @@ Under the hood is a less obvious but highly significant improvement. A range of 
 %  There are some topics that this document does not yet treat:
 
    \begin{quotation}
-      A car analogy:
+    A car analogy:
       A sample player is a drive along a straight, wide, almost new highway
       with only 2 other cars in sight, on a lightly overcast summer's day in a
       Ford Fiesta at around 40 MPH.
@@ -905,6 +901,19 @@ Under the hood is a less obvious but highly significant improvement. A range of 
       kit car doing 90 +
       In recent times we've been able to dispose of the donkeys, and the
       bandits are on the run :)
+
+    Updated:
+      The trucks are gone, there have been considerable road repairs, and the few
+      remaining bandits are in hiding. There are headlights so you can see where
+      you are going.
+
+    Later:
+      The blizard has blown itself out. We're still doing 90 + and sometimes reach
+      110 :)
+
+    More recently:
+      The car now has protective roll bars and uprated engine and brakes. We don't
+      know how fast it can go!
    \end{quotation}
 
 % References
